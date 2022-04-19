@@ -110,12 +110,14 @@ function formatarObjetoQuizz(){
 //Coloquei o objeto que tava lá no notion e está dando certo com ele, agora é so pegar as 
 //entradas do usuario e criar o nosso objeto
 function createQuizz(){
-    let promisse = axios.post(`${API}`,formatarObjetoQuizz())
+    let promisse = axios.post(`${API}`,formatarObjetoQuizz()) 
 
     promisse.then(response =>{
         
         console.log(response.data)
     })
+
+    promisse.catch(error => alert('Você não preencheu todos os campos para criar o objeto corretamente'))
 }
 
 
