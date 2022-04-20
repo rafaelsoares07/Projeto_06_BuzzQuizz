@@ -122,7 +122,7 @@ function createQuizz(){
 
 
 
-getQuizzes()
-getQuizzForID()
-createQuizz()
+//getQuizzes()
+//getQuizzForID()
+//createQuizz()
 
