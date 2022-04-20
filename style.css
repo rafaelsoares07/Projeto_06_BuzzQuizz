@@ -2,11 +2,11 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto';
 }
 
 body {
     background: #FAFAFA;
+    font-family: 'Roboto';
 }
 
 header {
