@@ -19,10 +19,33 @@
     </header>
 
     <main>
+
+        <!--Telas do formulário para a criação de um quizz do usuário-->
+        <div class="form-create-quizz">
+                <div class=infos-basicas>
+                        <div class="header">
+                                <h1>BuzzQuizz</h1>
+                        </div>
+                        <div class="form-infos-basicas">
+                                 <p class="titulo">Comece pelo começo</p> 
+                                 <input id="titulo-quizz" type="text" placeholder="Título do seu quizz" required minlength="20" maxlength="65">
+                                 <input id="url-image-principal" type="text" placeholder="URl da imagem do seu quizz" required>
+                                 <input id="quantidadePerguntas" type="number" placeholder="Quantidade de perguntas do quizz" required min="3">
+                                 <input id="quantidadeNiveis" type="number" placeholder="Quantidade de níveis do quizz" required min="2">  
+                                 <button onclick="validaçãoFormInfosBasicas()">Prosseguir para criar perguntas</button>    
+                        </div>
+                </div>
+
+                
+        </div>
+
+        
+
+
         <div class="create-quizz-container "> <!--esconder quando o usuário já tiver criado pelo menos 1 quizz-->
             <h2>Você não criou nenhum quizz ainda :(</h2>
             <div class="create-quizz-button">
-                <p>Criar Quizz</p>
+                <p onclick="openForm()">Criar Quizz</p>
             </div>
         </div>
 
@@ -97,6 +120,10 @@
             </li>
 
         </ul>
+
+    </main>
+
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

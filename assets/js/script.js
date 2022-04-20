@@ -1,5 +1,63 @@
+//Variaveis Globais 
+let titulo
+let numPerguntas
+let numNiveis
+let urlBanner
+
+//Eventos
+//EVENTOS DE CLICK
+
+function openForm(){
+    //renderizar
+}
+
+
+function validaçãoFormInfosBasicas(){
+    
+    numPerguntas = document.querySelector('#quantidadePerguntas').value 
+    numNiveis = document.querySelector('#quantidadeNiveis').value 
+    titulo = document.querySelector('#titulo-quizz').value
+    
+    let numPerguntasTrue = numPerguntas>=3
+    let numNiveisTrue = numNiveis>=2
+    let tituloTrue = titulo.length >=20
+
+    //console.log(tituloTrue)
+    //console.log(numPerguntasTrue)
+    //console.log(numNiveisTrue)
+    
+    if(numNiveisTrue&& numPerguntasTrue && tituloTrue){
+    
+       }
+
+    else{
+        alert(`
+        Validações:\n
+        Minimo de perguntas = 3 \n 
+        Minimo de Niveis = 2\n
+        Titulo precisa ter pelo menos 20 caracteres \n
+        URL precisa ser de uma imagem valida`)
+    }
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //URL BASE para fazer post e get, podemos só ir concatenando que nem o professor
-const API = "https://mock-api.driven.com.br/api/v3/buzzquizz/quizzes"
+//const API = "https://mock-api.driven.com.br/api/v3/buzzquizz/quizzes"
 
 
 //Pega lista de TODOS os quizzes da API
