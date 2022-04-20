@@ -8,7 +8,7 @@ let urlBanner
 //EVENTOS DE CLICK
 
 function openForm(){
-    //renderizar
+    document.querySelector('.form-create-quizz').style.display = 'block'
 }
 
 
